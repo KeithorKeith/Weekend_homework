@@ -32,13 +32,13 @@ end
 
 #8
 def pets_by_breed(pets, breed)
-    pets_by_breed = 0
+    pet_array = []
 
-    for pet in pets
-        if pets[:breed] == breed
-            pets_by_breed += 1
-     end
-    return pets_by_breed
+    for pet in pets[:pets]
+        if pet[:breed] == breed
+            pet_array << pet
+    end
+    return pet_array
 end
 
 #9
@@ -83,3 +83,4 @@ end
 #     result = arr.select { |item| item[:breed] == breed }
 #     p result.length
 #   end
+end
