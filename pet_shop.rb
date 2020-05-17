@@ -36,24 +36,23 @@ def pets_by_breed(pets, breed)
 
     for pet in pets[:pets]
         if pet[:breed] == breed
-            pet_array << pet
+            pet_array << breed
+        end
     end
     return pet_array
 end
 
 #9
-
+#above works
 
 #10
-# def find_pet_by_name(pets, name)
-#     for pet in pets
-#         if pet[:name] == name
-#             return pet
-#         end
-#     end
-#     return nil
-# end
-
+def find_pet_by_name(pets, name)
+    for pet in pets[:pets]
+        if pet[:name] == name
+            return pet
+        end
+    end
+end
 #11
 
 #12
@@ -82,5 +81,3 @@ end
 #     arr = pet_shop[:pets]
 #     result = arr.select { |item| item[:breed] == breed }
 #     p result.length
-#   end
-end
