@@ -31,15 +31,15 @@ def stock_count(pet_shop)
 end
 
 #8
-# def total_pets_by_breed(pets, breed)
-#     pets_by_breed = 0
+def pets_by_breed(pets, breed)
+    pets_by_breed = 0
 
-#     for pet in pets
-#         pets_by_breed += pets[:breed]
-#         breed[:breed] = 0
-#     end
-#     return pets_by_breed
-# end
+    for pet in pets
+        if pets[:breed] == breed
+            pets_by_breed += 1
+     end
+    return pets_by_breed
+end
 
 #9
 
@@ -58,9 +58,9 @@ end
 
 #12
 
-def remove_pet_by_name(pets)
-    pets.delete_at("Arthur")
-end
+# def remove_pet_by_name(pets)
+#     pets.delete_at("Arthur")
+# end
 
 
 # def pets_by_breed(pet_shop)
